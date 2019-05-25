@@ -1,7 +1,7 @@
 {
-  "REPO_URL": "https://github.com/Beomi/our_project",
-  "PROJECT_NAME": "our_project",
-  "REMOTE_HOST": "our_project.com",
-  "REMOTE_HOST_SSH": "123.32.1.4",
-  "REMOTE_USER": "sudouser"
+  "REPO_URL": "git@github.com:roamgom/manuscript_flask.git",
+  "PROJECT_NAME": "manuscript",
+  "REMOTE_HOST": "45.76.218.208",
+  "REMOTE_HOST_SSH": "45.76.218.208",
+  "REMOTE_USER": "root"
 }
