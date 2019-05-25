@@ -5,6 +5,7 @@ import torch
 import itertools
 import re
 import sys
+import os
 
 from lime.lime_text import LimeTextExplainer
 from torch import nn
@@ -16,6 +17,8 @@ from collections import Counter
 
 torch.manual_seed(42)
 np.random.seed(42)
+
+BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 
 def make_dictionary(sentences, vocabulary_size=None, initial_words=['<UNK>', '<PAD>', '<SOS>', '<EOS>']):
@@ -69,7 +72,7 @@ def make_mask(sentences, sentence_length=20):
     return mask
 
 
-with open('./params.pkl', 'rb') as pkl:
+with open(os.path.join(BASE_DIR, 'params.pkl'), 'rb') as pkl:
     params = pickle.load(pkl)
 word2idx = params['word2idx']
 idx2word = params['idx2word']
@@ -126,7 +129,7 @@ D = Discriminator(
     kernel_sizes=[2, 3, 4, 5]
 )
 
-D.load_state_dict(torch.load('./D_180115.pth', map_location='cpu'))
+D.load_state_dict(torch.load(os.path.join(BASE_DIR, 'D_180115.pth'), map_location='cpu'))
 
 # evaluation for fixed dropout
 D.eval()
