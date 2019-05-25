@@ -1,0 +1,7 @@
+{
+  "REPO_URL": "https://github.com/Beomi/our_project",
+  "PROJECT_NAME": "our_project",
+  "REMOTE_HOST": "our_project.com",
+  "REMOTE_HOST_SSH": "123.32.1.4",
+  "REMOTE_USER": "sudouser"
+}
