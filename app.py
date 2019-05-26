@@ -12,10 +12,19 @@ cors = CORS(app, resources={
 @app.route('/', methods=['GET'])
 def hello():
     sentence = request.args.get('text')
+    if not sentence:
+        return '로딩중입니다'
     print(sentence)
     result = inference_one(sentence)
+    return jsonify({'result': result})
+
+
+@app.route('/limer_html', methods=['GET'])
+def get_limer_html():
+    sentence = request.args.get('text')
     html = limer_html(sentence)
-    return jsonify({'result': result, 'html': html})
+    html = html.replace('overflow:scroll', '')
+    return html
 
 
 if __name__ == '__main__':
