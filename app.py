@@ -23,7 +23,7 @@ def hello():
 def get_limer_html():
     sentence = request.args.get('text')
     html = limer_html(sentence)
-    html = html.replace('overflow:scroll', '')
+    html = html.replace('overflow:scroll', 'overflow:hidden')
     return html
 
 
