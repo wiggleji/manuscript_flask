@@ -177,6 +177,14 @@ def limer(example):
     exp.show_in_notebook()
 
 
+def limer_html(example):
+    explainer = LimeTextExplainer()
+    exp = explainer.explain_instance(spacing_example(example), lambda s: do_inference(s, True).detach().numpy(),
+                                     top_labels=1)
+    html_result = exp.as_html()
+    return html_result
+
+
 if __name__ == '__main__':
     sentence = sys.argv[1]
     slang_accuracy = inference_one(sentence)
