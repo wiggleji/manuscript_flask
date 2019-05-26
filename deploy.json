@@ -1,7 +1,7 @@
 {
   "REPO_URL": "git@github.com:roamgom/manuscript_flask.git",
   "PROJECT_NAME": "manuscript",
-  "REMOTE_HOST": "45.76.218.208",
-  "REMOTE_HOST_SSH": "45.76.218.208",
-  "REMOTE_USER": "roamgom"
+  "REMOTE_HOST": "manuscript.roamgom.net",
+  "REMOTE_HOST_SSH": "52.78.91.11",
+  "REMOTE_USER": "ubuntu"
 }
