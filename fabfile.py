@@ -15,6 +15,7 @@ PROJECT_NAME = envs['PROJECT_NAME']
 REMOTE_HOST = envs['REMOTE_HOST']
 REMOTE_HOST_SSH = envs['REMOTE_HOST_SSH']
 REMOTE_USER = envs['REMOTE_USER']
+REMOTE_SSH_KEY = envs['SSH_KEY']
 
 # SSH에 접속할 유저를 지정하고,
 env.user = REMOTE_USER
@@ -22,6 +23,7 @@ env.user = REMOTE_USER
 env.hosts = [
     REMOTE_HOST_SSH,
 ]
+env.key_filename = REMOTE_SSH_KEY
 # 원격 서버중 어디에 프로젝트를 저장할지 지정해준 뒤,
 project_folder = '/home/{}/{}'.format(env.user, PROJECT_NAME)
 # 우리 프로젝트에 필요한 apt 패키지들을 적어줍니다.
