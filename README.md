@@ -33,3 +33,8 @@ fab new_server
 
 fab deploy
 ```
+
+
+**DNS(Optional)**
+
+edit IP address on DNS from Cloudflare
