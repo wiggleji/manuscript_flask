@@ -25,6 +25,9 @@ edit value in `deploy.json`
 }
 ```
 
+Need to install Pytorch exclusively by using ssh to server.
+paste proper version of pytorch depending on OS from [This site](https://pytorch.org/get-started/locally/)
+
 ```console
 fab new_server
 
