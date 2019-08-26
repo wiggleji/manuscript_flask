@@ -1,0 +1,7 @@
+{
+    "REPO_URL": "git@github.com:roamgom/manuscript_flask.git",
+    "PROJECT_NAME": "manuscript",
+    "REMOTE_HOST": [HOST_DOMAIN],
+    "REMOTE_HOST_SSH": [IP_ADDRESS],
+    "REMOTE_USER": [USERNAME]
+  }
