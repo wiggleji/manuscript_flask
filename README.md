@@ -26,5 +26,7 @@ edit value in `deploy.json`
 ```
 
 ```console
+fab new_server
+
 fab deploy
 ```
