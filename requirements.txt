@@ -14,7 +14,7 @@ defusedxml==0.6.0
 entrypoints==0.3
 Fabric3==1.14.post1
 Flask==1.0.3
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 imageio==2.5.0
 ipykernel==5.1.1
 ipython==7.5.0
